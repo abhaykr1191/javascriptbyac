@@ -1,1 +1,1 @@
-const 
+const myNum = [1, 2, 3]
