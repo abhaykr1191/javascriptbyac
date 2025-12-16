@@ -186,6 +186,6 @@ console.log(firstName[-1]);
 
 let string = "apnacollege"+123
 
-console.log((string));
+console.log(string);
 
 // length of  empty string is 0 and with a space string length is 1
