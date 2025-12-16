@@ -10,8 +10,8 @@
 // Variables - name of the storage location
 
 // Data Types - primitive -> Number, Boolean, String, Undefined, Null, BigInt, Symbol
-a = 10
-typeof a // -> number
+// a = 10
+// typeof a // -> number
 
 // Numbers in JS
 // Positive(1)& Negative(-14)
@@ -34,6 +34,7 @@ typeof a // -> number
 
 
 const pi = 3.14
+r = 3
 area_of_circle = pi*r**2
 
 // var keyword - old syntax of writing variables
@@ -45,7 +46,7 @@ var num1 = 1;
 var num2 = 2;
 var sum = num1+num2;
 
-let age = 23
+// let age = 23
 age +2 // after 2 years 
 // still age = 23
 
@@ -74,8 +75,8 @@ nage = age++
 
 // practice qs
 // let num = 5; // num = 5
-let newNum = num++; // -> newNum  = 5  num =6
-newNum = ++num   // newNum = 7 num = 7
+// let newNum = num++; // -> newNum  = 5  num =6
+// newNum = ++num   // newNum = 7 num = 7
 
 
 // JAVASCRIPT IDENTIFIER RULES
@@ -112,12 +113,12 @@ newNum = ++num   // newNum = 7 num = 7
 // CamelCase - way of writing identifiers
 
 // Boolean in JS
-let age = 13;
+// let age = 13;
 let isAdult = false;
 age = 25;
 isAdult = true;
-console.log(isAdult); // -> true
-console.log(typeof isAdult); // -> boolean
+// console.log(isAdult); // -> true
+// console.log(typeof isAdult); // -> boolean
 
 
 
@@ -137,13 +138,54 @@ console.log(typeof isAdult); // -> boolean
 
 // String in JS - Strings are text or sequence of characters
 
-let name = "Tony Stark";
+// let name = "Tony Stark";
 let role = 'Ironman';
 let char = 'a';
 let num = '23';
 let empty = "";
 
 
+let sentence = 'this is "apple"'
+
+// String Indices
+let hero = "Tony Stark"
+// T -> index = 0
+// o -> index = 1
+// n -> index = 2
+// y -> index = 3
+//   -> index = 4
+// S -> index = 5
+// t -> index = 6
+// a -> index = 7
+// r -> index = 8
+// k -> index = 9
+
+hero[0] // -> T
+hero[-1] // -> k
+
+// null & undefined in JS
+// undefined -> a variable that has not been assigned a value of type undefined
+let n;
+// console.log(n);  // undefined
 
 
+// null -> the null value represents the intentional absence of any object value
+// to be explicitly assigned 
 
+let a = null;
+// console.log(a);  // null
+
+// Practice Question
+let name = "Abhay Kumar"
+console.log(typeof(name));
+
+let firstName = "Abhay";
+console.log(firstName[0]);
+
+console.log(firstName[-1]);
+
+let string = "apnacollege"+123
+
+console.log((string));
+
+// length of  empty string is 0 and with a space string length is 1
