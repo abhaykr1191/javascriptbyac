@@ -192,4 +192,7 @@ console.log(tic_tac_toe);
 tic_tac_toe[0][1] = 'O';
 console.log(tic_tac_toe);
 
+console.log(lang.reverse().indexOf("javascript"));
+
+// ARRAY REFERENCES
 
