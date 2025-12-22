@@ -155,7 +155,41 @@ let colors = primary.concat(secondary);
 
 // Ques 2 ->  Return the index of the Javascript from the given array,if it was reversed
 let lang =['c','c++','html','javascript','python','java','c#','sql'];
-console.log(lang.reverse().indexOf("javascript"));
+// console.log(lang.reverse().indexOf("javascript"));
 
-// ARRAY REFERENCES
+// ARRAY REFERENCES -> Address in Memory
+
+console.log([1] == [1]);
+// console.log([1] === [1]);  // This condition will always return 'false' since JavaScript compares objects by reference, not value.
+
+let arr1 = [1, 2, 5]
+let arr2 = arr1 // this will point to the same array reference that's why the change in  1 will be also done in other one.
+
+const g = 10;
+// g=9.8    // app.js:169 Uncaught TypeError: Assignment to constant variable.
+console.log(g);
+
+// IN ARRAYS
+const arr = [1, 2, 3];
+arr.push(4);
+arr.pop(4);
+// arr = [1,2,3];   // Uncaught TypeError: Assignment to constant variable.
+// console.log(arr);
+
+let nums2 = [[2,4],[3,6],[4,8]];
+console.log(nums2[0][1]);
+
+// ++++++++++++++++++++++++     Practice Question       +++++++++++++++++++++++
+// Ques ->  Create a nested array to show the following tic-tac-toe game state
+// 1st row -> 'X',null,'O'
+// 2nd row -> null,'X',null
+// 2nd row -> 'O',null, 'X'
+
+let tic_tac_toe =[['X',null,'O'],[null,'X',null],['O',null,'X']];
+console.log(tic_tac_toe);
+
+// new question (additional) make the 1st row 2nd column "O"
+tic_tac_toe[0][1] = 'O';
+console.log(tic_tac_toe);
+
 
